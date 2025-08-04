@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/GP3dyzw/IMG-6199.jpg">
+    <title>Frontend-кейс</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">
+                <a class="header__link" target="_blank" href="https://t.me/frontend_case">Frontend кейс</a>  
+            </h1>
+        </header>
+
+        <main class="main">
+            <!-- Попередження -->
+            <div class="warning hidden">
+                у тесті немає запитань, <br> заповніть та повертайтесь!
+            </div>
+
+            <!-- Тест на skills верстальника -->
+            <div class="quiz ">
+                <h2 class="quiz__header">Тест на знання історії України</h2>
+                <div class="quiz__progress">
+                    <div class="quiz__progress-inner"></div>
+                </div>
+                <div class="quiz__content">
+                    <h3 class="quiz__title">
+                        Запитання № 1
+                        <!-- Задаемо значення в JavaScript -->
+                    </h3>
+                    <ul class="quiz__list">
+                        <li>Варіант відповіді 1</li>
+                        <li>Варіант відповіді 2</li>
+                        <li>Варіант відповіді 3</li>
+                        <!-- Задаемо значення в JavaScript -->
+                    </ul>
+                </div>
+                <div class="quiz__footer">
+                    <div class="quiz__total">
+                        <p> 1 з 5</p>
+                        <!-- Задаемо значення в JavaScript -->
+                    </div>
+                    <button class="quiz__next-btn">Наступний</button>
+                </div>
+            </div>
+
+            <!-- Виводимо результати тесту -->
+            <div class="result hidden">
+                <div class="result__img">
+                    <img src="./img/the-end.png" alt="The end">
+                </div>
+                <div class="result__title">Ви завершили тест!</div>
+                <div class="result__text">
+                    <!-- Задаемо значення в JavaScript -->
+                </div>
+                <div class="result__btn">
+                    <a class="result__restart" href="/">Почати знову</a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            Підключайся до нас в телеграмм <a class="footer__link" target="_blank" href="https://t.me/frontend_case">@frontend_case</a>.
+            Допомога новачкам!
+            Будемо развиватись у фронтенд разрабці разом :)
+        </footer>
+    </div>
+    <script src="./js/questions.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
