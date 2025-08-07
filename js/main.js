@@ -33,10 +33,12 @@ function showQuestions(index) {
 
 
 
-    // const options = list.querySelectorAll(".quiz__option");
+    const options = list.querySelectorAll(".quiz__option");
     // options.forEach((item) => {
     //     item.addEventListener("click", () => optionSelected(item));
     // });
+
+    options.forEach((item) => item.setAttribute('onClick',optionSelected(this)));
 
     // // Індикатор і прогрес
     total.innerHTML = `${index + 1} з ${questions.length}`;
@@ -47,6 +49,17 @@ function optionSelected(answer) {
     const userAnswer = answer.textContent;
     const correctAnswer = questions[count].answer;
     const options = document.querySelectorAll('.quiz__option');
+    const iconCorrect = "<span>&#10004;</span>";
+    const iconIncorrect = "<span>&#9940;</span>";
+
+    if(userAnswer == correctAnswer){
+        userScore += 1;
+        answer.classList.add('correct');
+        answer.insertAdjacentHTML("beforeend", iconCorrect)
+    }else{
+        
+
+    }
 
 }
 
